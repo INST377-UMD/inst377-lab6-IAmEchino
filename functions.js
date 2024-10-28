@@ -36,7 +36,8 @@ function getLocality(latitude, longitude) {
 
         /* 
         Setting the third thing here to false causes an error in Chrome,
-         but I don't know how to fix it. The error is as follows:
+        but I don't know how to fix it without breaking functionality.
+        The error is as follows:
 
         Synchronous XMLHttpRequest on the main thread is deprecated because of 
         its detrimental effects to the end user's experience. For more help, 
@@ -44,7 +45,7 @@ function getLocality(latitude, longitude) {
         1 source 
         functions.js:35
         */
-       
+
         xmlhttp.send();
     
         if (xmlhttp.status === 200) {
